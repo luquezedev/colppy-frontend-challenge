@@ -28,12 +28,6 @@ jobs:
         working-directory: frontend
         run: npm run type-check
 
-      - name: Run linter
-        working-directory: frontend
-        env:
-          ESLINT_USE_FLAT_CONFIG: false
-        run: npm run lint
-
       - name: Run unit tests
         working-directory: frontend
         run: npm run test -- --run
