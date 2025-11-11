@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react';
+import { memo, useMemo, useState, useRef } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import { useTheme, getChartTheme } from '@/contexts/ThemeContext';
@@ -12,11 +12,29 @@ interface TimeSeriesChartProps {
   showLegend?: boolean;
 }
 
+interface SeriesVisibility {
+  activeUsers: boolean;
+  revenue: boolean;
+  churnRate: boolean;
+  conversionRate: boolean;
+}
+
 export const TimeSeriesChart = memo<TimeSeriesChartProps>(
   ({ data, height = 400, showLegend = true }) => {
     const { theme } = useTheme();
     const { t, i18n } = useTranslation();
     const chartTheme = getChartTheme(theme);
+
+    // Track series visibility state
+    const [seriesVisibility, setSeriesVisibility] = useState<SeriesVisibility>({
+      activeUsers: true,
+      revenue: true,
+      churnRate: false,
+      conversionRate: false,
+    });
+
+    // Keep a ref to the chart instance
+    const chartRef = useRef<Highcharts.Chart | null>(null);
 
     const options = useMemo<Highcharts.Options>(() => {
       // Store translated names for use in event handlers
@@ -61,6 +79,12 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
           backgroundColor: chartTheme.backgroundColor,
           style: {
             fontFamily: 'Inter, system-ui, sans-serif',
+          },
+          events: {
+            load: function () {
+              // Store chart reference when loaded
+              chartRef.current = this;
+            },
           },
         },
         title: {
@@ -224,7 +248,15 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
             color: '#3b82f6',
             yAxis: 0,
             type: 'line',
-            visible: true,
+            visible: seriesVisibility.activeUsers,
+            events: {
+              show: function () {
+                setSeriesVisibility((prev) => ({ ...prev, activeUsers: true }));
+              },
+              hide: function () {
+                setSeriesVisibility((prev) => ({ ...prev, activeUsers: false }));
+              },
+            },
           },
           {
             name: t('metrics.revenue'),
@@ -232,7 +264,15 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
             color: '#10b981',
             yAxis: 1,
             type: 'line',
-            visible: true,
+            visible: seriesVisibility.revenue,
+            events: {
+              show: function () {
+                setSeriesVisibility((prev) => ({ ...prev, revenue: true }));
+              },
+              hide: function () {
+                setSeriesVisibility((prev) => ({ ...prev, revenue: false }));
+              },
+            },
           },
           {
             name: churnRateName,
@@ -240,9 +280,10 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
             color: '#ef4444',
             yAxis: 2,
             type: 'line',
-            visible: false, // Disabled by default
+            visible: seriesVisibility.churnRate,
             events: {
               show: function () {
+                setSeriesVisibility((prev) => ({ ...prev, churnRate: true }));
                 // Show rates axis when this series is shown
                 const chart = this.chart;
                 const axis = chart.yAxis[2];
@@ -252,6 +293,7 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
                 }
               },
               hide: function () {
+                setSeriesVisibility((prev) => ({ ...prev, churnRate: false }));
                 // Hide rates axis only if both rate series are hidden
                 const chart = this.chart;
                 const conversionSeries = chart.series.find((s) => s.name === conversionRateName);
@@ -271,9 +313,10 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
             color: '#f59e0b',
             yAxis: 2,
             type: 'line',
-            visible: false, // Disabled by default
+            visible: seriesVisibility.conversionRate,
             events: {
               show: function () {
+                setSeriesVisibility((prev) => ({ ...prev, conversionRate: true }));
                 // Show rates axis when this series is shown
                 const chart = this.chart;
                 const axis = chart.yAxis[2];
@@ -283,6 +326,7 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
                 }
               },
               hide: function () {
+                setSeriesVisibility((prev) => ({ ...prev, conversionRate: false }));
                 // Hide rates axis only if both rate series are hidden
                 const chart = this.chart;
                 const churnSeries = chart.series.find((s) => s.name === churnRateName);
@@ -332,7 +376,7 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
           enabled: false,
         },
       };
-    }, [data, height, showLegend, theme, t, i18n.language, chartTheme]);
+    }, [data, height, showLegend, theme, t, i18n.language, chartTheme, seriesVisibility]);
 
     return (
       <div className="w-full">
