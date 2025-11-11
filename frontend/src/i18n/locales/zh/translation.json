@@ -1,0 +1,154 @@
+{
+  "dashboard": {
+    "title": "指标仪表板",
+    "subtitle": "实时性能监控",
+    "lastUpdated": "最后更新：{{time}}",
+    "autoRefresh": "自动刷新：{{status}}",
+    "refreshing": "正在刷新...",
+    "loading": "正在加载仪表板...",
+    "error": "加载错误",
+    "noData": "暂无数据"
+  },
+  "metrics": {
+    "activeUsers": "活跃用户",
+    "revenue": "收入",
+    "churnRate": "流失率",
+    "conversionRate": "转化率",
+    "retention": "留存率",
+    "growth": "增长率",
+    "engagement": "参与度",
+    "performance": "性能"
+  },
+  "regions": {
+    "title": "区域分布",
+    "north": "北部",
+    "south": "南部",
+    "east": "东部",
+    "west": "西部",
+    "americas": "美洲",
+    "europe": "欧洲",
+    "asia": "亚洲",
+    "africa": "非洲",
+    "oceania": "大洋洲"
+  },
+  "trends": {
+    "up": "上升 {{value}}%",
+    "down": "下降 {{value}}%",
+    "stable": "稳定",
+    "rising": "上升中",
+    "falling": "下降中",
+    "vsLastPeriod": "环比"
+  },
+  "alerts": {
+    "title": "警报",
+    "thresholdExceeded": "超过阈值：{{metric}}",
+    "criticalLevel": "达到关键级别",
+    "warning": "警告",
+    "info": "信息",
+    "success": "成功",
+    "churnHigh": "流失率超过可接受阈值",
+    "revenueDown": "收入显著下降",
+    "usersIncreasing": "活跃用户正在增加",
+    "conversionLow": "转化率需要关注"
+  },
+  "chart": {
+    "timeEvolution": "时间演变",
+    "regionalBreakdown": "区域分布",
+    "trendAnalysis": "趋势分析",
+    "comparison": "对比",
+    "distribution": "分布",
+    "noData": "图表暂无数据",
+    "legend": "图例",
+    "xAxis": "时间",
+    "yAxis": "数值",
+    "yAxisRates": "率 (%)",
+    "dataPoint": "数据点"
+  },
+  "settings": {
+    "title": "设置",
+    "theme": "主题",
+    "language": "语言",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统",
+    "preferences": "偏好设置",
+    "notifications": "通知",
+    "autoRefresh": "自动刷新",
+    "refreshInterval": "刷新间隔",
+    "seconds": "秒"
+  },
+  "actions": {
+    "refresh": "刷新",
+    "export": "导出",
+    "download": "下载",
+    "filter": "筛选",
+    "reset": "重置",
+    "apply": "应用",
+    "cancel": "取消",
+    "save": "保存",
+    "close": "关闭",
+    "viewMore": "查看更多",
+    "viewLess": "收起",
+    "expand": "展开",
+    "collapse": "折叠",
+    "retry": "重试"
+  },
+  "filters": {
+    "dateRange": "日期范围",
+    "today": "今天",
+    "yesterday": "昨天",
+    "last7Days": "最近7天",
+    "last30Days": "最近30天",
+    "thisMonth": "本月",
+    "lastMonth": "上月",
+    "custom": "自定义",
+    "from": "从",
+    "to": "至"
+  },
+  "errors": {
+    "generic": "出了点问题",
+    "fetchFailed": "获取数据失败",
+    "connectionLost": "连接丢失",
+    "serverError": "服务器错误",
+    "clientError": "客户端错误",
+    "timeout": "请求超时",
+    "unauthorized": "未授权访问",
+    "notFound": "资源未找到",
+    "retry": "请重试"
+  },
+  "formats": {
+    "number": "{{value}}",
+    "currency": "¥{{value}}",
+    "percentage": "{{value}}%",
+    "date": "{{date}}",
+    "time": "{{time}}",
+    "dateTime": "{{date}} {{time}}"
+  },
+  "tooltips": {
+    "refreshData": "点击刷新数据",
+    "exportData": "导出为CSV",
+    "toggleTheme": "切换浅色和深色主题",
+    "changeLanguage": "更改显示语言",
+    "viewDetails": "点击查看详情",
+    "closeAlert": "关闭此警报"
+  },
+  "accessibility": {
+    "skipToContent": "跳至内容",
+    "mainNavigation": "主导航",
+    "loading": "加载中",
+    "chart": "数据可视化图表",
+    "table": "数据表",
+    "alert": "警告消息",
+    "modal": "模态对话框",
+    "close": "关闭",
+    "menu": "菜单"
+  },
+  "summary": {
+    "title": "统计摘要",
+    "averageActiveUsers": "平均活跃用户",
+    "totalRevenue": "总收入",
+    "avgConversionRate": "平均转化率",
+    "avgChurnRate": "平均流失率",
+    "topRegion": "主要区域"
+  }
+}

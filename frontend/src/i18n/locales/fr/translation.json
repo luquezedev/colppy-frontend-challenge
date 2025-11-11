@@ -1,0 +1,154 @@
+{
+  "dashboard": {
+    "title": "Tableau de Bord des Métriques",
+    "subtitle": "Surveillance des Performances en Temps Réel",
+    "lastUpdated": "Dernière mise à jour : {{time}}",
+    "autoRefresh": "Actualisation automatique : {{status}}",
+    "refreshing": "Actualisation...",
+    "loading": "Chargement du tableau de bord...",
+    "error": "Erreur lors du chargement",
+    "noData": "Aucune donnée disponible"
+  },
+  "metrics": {
+    "activeUsers": "Utilisateurs Actifs",
+    "revenue": "Revenus",
+    "churnRate": "Taux d'Attrition",
+    "conversionRate": "Taux de Conversion",
+    "retention": "Rétention",
+    "growth": "Croissance",
+    "engagement": "Engagement",
+    "performance": "Performance"
+  },
+  "regions": {
+    "title": "Répartition Régionale",
+    "north": "Nord",
+    "south": "Sud",
+    "east": "Est",
+    "west": "Ouest",
+    "americas": "Amériques",
+    "europe": "Europe",
+    "asia": "Asie",
+    "africa": "Afrique",
+    "oceania": "Océanie"
+  },
+  "trends": {
+    "up": "Hausse de {{value}}%",
+    "down": "Baisse de {{value}}%",
+    "stable": "Stable",
+    "rising": "En hausse",
+    "falling": "En baisse",
+    "vsLastPeriod": "vs période précédente"
+  },
+  "alerts": {
+    "title": "Alertes",
+    "thresholdExceeded": "Seuil dépassé : {{metric}}",
+    "criticalLevel": "Niveau critique atteint",
+    "warning": "Avertissement",
+    "info": "Information",
+    "success": "Succès",
+    "churnHigh": "Le taux d'attrition dépasse le seuil acceptable",
+    "revenueDown": "Les revenus ont diminué significativement",
+    "usersIncreasing": "Les utilisateurs actifs augmentent",
+    "conversionLow": "Le taux de conversion nécessite votre attention"
+  },
+  "chart": {
+    "timeEvolution": "Évolution Temporelle",
+    "regionalBreakdown": "Répartition Régionale",
+    "trendAnalysis": "Analyse des Tendances",
+    "comparison": "Comparaison",
+    "distribution": "Distribution",
+    "noData": "Aucune donnée disponible pour le graphique",
+    "legend": "Légende",
+    "xAxis": "Temps",
+    "yAxis": "Valeur",
+    "yAxisRates": "Taux (%)",
+    "dataPoint": "Point de Données"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "theme": "Thème",
+    "language": "Langue",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "preferences": "Préférences",
+    "notifications": "Notifications",
+    "autoRefresh": "Actualisation Automatique",
+    "refreshInterval": "Intervalle d'Actualisation",
+    "seconds": "secondes"
+  },
+  "actions": {
+    "refresh": "Actualiser",
+    "export": "Exporter",
+    "download": "Télécharger",
+    "filter": "Filtrer",
+    "reset": "Réinitialiser",
+    "apply": "Appliquer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "close": "Fermer",
+    "viewMore": "Voir Plus",
+    "viewLess": "Voir Moins",
+    "expand": "Développer",
+    "collapse": "Réduire",
+    "retry": "Réessayer"
+  },
+  "filters": {
+    "dateRange": "Période",
+    "today": "Aujourd'hui",
+    "yesterday": "Hier",
+    "last7Days": "7 derniers jours",
+    "last30Days": "30 derniers jours",
+    "thisMonth": "Ce mois",
+    "lastMonth": "Mois dernier",
+    "custom": "Personnalisé",
+    "from": "Du",
+    "to": "Au"
+  },
+  "errors": {
+    "generic": "Une erreur est survenue",
+    "fetchFailed": "Échec de récupération des données",
+    "connectionLost": "Connexion perdue",
+    "serverError": "Erreur serveur",
+    "clientError": "Erreur client",
+    "timeout": "Délai d'attente dépassé",
+    "unauthorized": "Accès non autorisé",
+    "notFound": "Ressource non trouvée",
+    "retry": "Veuillez réessayer"
+  },
+  "formats": {
+    "number": "{{value}}",
+    "currency": "{{value}} €",
+    "percentage": "{{value}} %",
+    "date": "{{date}}",
+    "time": "{{time}}",
+    "dateTime": "{{date}} {{time}}"
+  },
+  "tooltips": {
+    "refreshData": "Cliquer pour actualiser les données",
+    "exportData": "Exporter les données en CSV",
+    "toggleTheme": "Basculer entre thème clair et sombre",
+    "changeLanguage": "Changer la langue d'affichage",
+    "viewDetails": "Cliquer pour voir les détails",
+    "closeAlert": "Fermer cette alerte"
+  },
+  "accessibility": {
+    "skipToContent": "Passer au contenu",
+    "mainNavigation": "Navigation principale",
+    "loading": "Chargement",
+    "chart": "Graphique de visualisation des données",
+    "table": "Tableau de données",
+    "alert": "Message d'alerte",
+    "modal": "Boîte de dialogue modale",
+    "close": "Fermer",
+    "menu": "Menu"
+  },
+  "summary": {
+    "title": "Statistiques Résumées",
+    "averageActiveUsers": "Utilisateurs Actifs Moyens",
+    "totalRevenue": "Revenus Totaux",
+    "avgConversionRate": "Taux de Conversion Moyen",
+    "avgChurnRate": "Taux d'Attrition Moyen",
+    "topRegion": "Région Principale"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "dashboard": {
+    "title": "Metriken-Dashboard",
+    "subtitle": "Echtzeit-Leistungsüberwachung",
+    "lastUpdated": "Zuletzt aktualisiert: {{time}}",
+    "autoRefresh": "Automatische Aktualisierung: {{status}}",
+    "refreshing": "Aktualisierung...",
+    "loading": "Dashboard wird geladen...",
+    "error": "Fehler beim Laden",
+    "noData": "Keine Daten verfügbar"
+  },
+  "metrics": {
+    "activeUsers": "Aktive Benutzer",
+    "revenue": "Umsatz",
+    "churnRate": "Abwanderungsrate",
+    "conversionRate": "Konversionsrate",
+    "retention": "Kundenbindung",
+    "growth": "Wachstum",
+    "engagement": "Engagement",
+    "performance": "Leistung"
+  },
+  "regions": {
+    "title": "Regionale Aufschlüsselung",
+    "north": "Norden",
+    "south": "Süden",
+    "east": "Osten",
+    "west": "Westen",
+    "americas": "Amerika",
+    "europe": "Europa",
+    "asia": "Asien",
+    "africa": "Afrika",
+    "oceania": "Ozeanien"
+  },
+  "trends": {
+    "up": "Gestiegen {{value}}%",
+    "down": "Gefallen {{value}}%",
+    "stable": "Stabil",
+    "rising": "Steigend",
+    "falling": "Fallend",
+    "vsLastPeriod": "vs. letzte Periode"
+  },
+  "alerts": {
+    "title": "Warnungen",
+    "thresholdExceeded": "Schwellenwert überschritten: {{metric}}",
+    "criticalLevel": "Kritisches Level erreicht",
+    "warning": "Warnung",
+    "info": "Information",
+    "success": "Erfolg",
+    "churnHigh": "Abwanderungsrate liegt über akzeptablem Schwellenwert",
+    "revenueDown": "Umsatz ist erheblich gesunken",
+    "usersIncreasing": "Aktive Benutzer nehmen zu",
+    "conversionLow": "Konversionsrate benötigt Aufmerksamkeit"
+  },
+  "chart": {
+    "timeEvolution": "Zeitverlauf",
+    "regionalBreakdown": "Regionale Aufschlüsselung",
+    "trendAnalysis": "Trendanalyse",
+    "comparison": "Vergleich",
+    "distribution": "Verteilung",
+    "noData": "Keine Daten für Diagramm verfügbar",
+    "legend": "Legende",
+    "xAxis": "Zeit",
+    "yAxis": "Wert",
+    "yAxisRates": "Raten (%)",
+    "dataPoint": "Datenpunkt"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "theme": "Design",
+    "language": "Sprache",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System",
+    "preferences": "Präferenzen",
+    "notifications": "Benachrichtigungen",
+    "autoRefresh": "Automatische Aktualisierung",
+    "refreshInterval": "Aktualisierungsintervall",
+    "seconds": "Sekunden"
+  },
+  "actions": {
+    "refresh": "Aktualisieren",
+    "export": "Exportieren",
+    "download": "Herunterladen",
+    "filter": "Filtern",
+    "reset": "Zurücksetzen",
+    "apply": "Anwenden",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "close": "Schließen",
+    "viewMore": "Mehr anzeigen",
+    "viewLess": "Weniger anzeigen",
+    "expand": "Erweitern",
+    "collapse": "Reduzieren",
+    "retry": "Erneut versuchen"
+  },
+  "filters": {
+    "dateRange": "Zeitraum",
+    "today": "Heute",
+    "yesterday": "Gestern",
+    "last7Days": "Letzte 7 Tage",
+    "last30Days": "Letzte 30 Tage",
+    "thisMonth": "Dieser Monat",
+    "lastMonth": "Letzter Monat",
+    "custom": "Benutzerdefiniert",
+    "from": "Von",
+    "to": "Bis"
+  },
+  "errors": {
+    "generic": "Etwas ist schiefgelaufen",
+    "fetchFailed": "Datenabruf fehlgeschlagen",
+    "connectionLost": "Verbindung verloren",
+    "serverError": "Serverfehler",
+    "clientError": "Clientfehler",
+    "timeout": "Zeitüberschreitung",
+    "unauthorized": "Nicht autorisierter Zugriff",
+    "notFound": "Ressource nicht gefunden",
+    "retry": "Bitte versuchen Sie es erneut"
+  },
+  "formats": {
+    "number": "{{value}}",
+    "currency": "{{value}} €",
+    "percentage": "{{value}} %",
+    "date": "{{date}}",
+    "time": "{{time}}",
+    "dateTime": "{{date}} {{time}}"
+  },
+  "tooltips": {
+    "refreshData": "Klicken Sie, um Daten zu aktualisieren",
+    "exportData": "Daten als CSV exportieren",
+    "toggleTheme": "Zwischen hellem und dunklem Design wechseln",
+    "changeLanguage": "Anzeigesprache ändern",
+    "viewDetails": "Klicken Sie für Details",
+    "closeAlert": "Diese Warnung schließen"
+  },
+  "accessibility": {
+    "skipToContent": "Zum Inhalt springen",
+    "mainNavigation": "Hauptnavigation",
+    "loading": "Lädt",
+    "chart": "Datenvisualisierungsdiagramm",
+    "table": "Datentabelle",
+    "alert": "Warnmeldung",
+    "modal": "Modaler Dialog",
+    "close": "Schließen",
+    "menu": "Menü"
+  },
+  "summary": {
+    "title": "Zusammenfassende Statistiken",
+    "averageActiveUsers": "Durchschnittliche Aktive Benutzer",
+    "totalRevenue": "Gesamtumsatz",
+    "avgConversionRate": "Durchschnittliche Konversionsrate",
+    "avgChurnRate": "Durchschnittliche Abwanderungsrate",
+    "topRegion": "Hauptregion"
+  }
+}

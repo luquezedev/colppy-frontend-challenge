@@ -1,0 +1,183 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing
+coverage/
+*.lcov
+.nyc_output
+playwright-report/
+playwright/.cache/
+test-results/
+__tests__/coverage/
+
+# Production
+dist/
+dist-ssr/
+build/
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Cache
+.eslintcache
+.stylelintcache
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+.next/
+.nuxt/
+.docusaurus/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+tmp/
+temp/
+
+# Build tools
+.gradle/
+.sass-cache/
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Deployment
+.vercel
+.netlify
+*.zip
+*.tar.gz
+
+# Debug
+debug/
+*.pid
+*.seed
+*.pid.lock
+
+# Misc
+.history
+.svn/
+.hg/
+*.bak
+*.backup
+*.orig
+
+# API Mock specific
+api/node_modules/
+api/logs/
+api/*.log
+
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/.vite/
+frontend/*.local
+
+# Vitest
+vitest.config.ts.timestamp-*
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# E2E
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Storybook
+storybook-static/
+.storybook/out/
+
+# Documentation
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Certificates
+*.pem
+*.key
+*.crt
+*.cer
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Python (if any scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# AWS
+.aws/
+aws-exports.js
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Supabase
+.supabase/
+
+# Ignore everything in public except specific files
+# public/*
+# !public/favicon.ico
+# !public/locales/

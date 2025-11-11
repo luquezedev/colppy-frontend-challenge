@@ -1,0 +1,154 @@
+{
+  "dashboard": {
+    "title": "メトリックスダッシュボード",
+    "subtitle": "リアルタイムパフォーマンス監視",
+    "lastUpdated": "最終更新: {{time}}",
+    "autoRefresh": "自動更新: {{status}}",
+    "refreshing": "更新中...",
+    "loading": "ダッシュボードを読み込んでいます...",
+    "error": "読み込みエラー",
+    "noData": "データがありません"
+  },
+  "metrics": {
+    "activeUsers": "アクティブユーザー",
+    "revenue": "収益",
+    "churnRate": "解約率",
+    "conversionRate": "コンバージョン率",
+    "retention": "リテンション",
+    "growth": "成長率",
+    "engagement": "エンゲージメント",
+    "performance": "パフォーマンス"
+  },
+  "regions": {
+    "title": "地域別内訳",
+    "north": "北",
+    "south": "南",
+    "east": "東",
+    "west": "西",
+    "americas": "アメリカ大陸",
+    "europe": "ヨーロッパ",
+    "asia": "アジア",
+    "africa": "アフリカ",
+    "oceania": "オセアニア"
+  },
+  "trends": {
+    "up": "{{value}}% 上昇",
+    "down": "{{value}}% 下降",
+    "stable": "安定",
+    "rising": "上昇中",
+    "falling": "下降中",
+    "vsLastPeriod": "前期比"
+  },
+  "alerts": {
+    "title": "アラート",
+    "thresholdExceeded": "しきい値超過: {{metric}}",
+    "criticalLevel": "危機的レベルに到達",
+    "warning": "警告",
+    "info": "情報",
+    "success": "成功",
+    "churnHigh": "解約率が許容しきい値を超えています",
+    "revenueDown": "収益が大幅に減少しました",
+    "usersIncreasing": "アクティブユーザーが増加しています",
+    "conversionLow": "コンバージョン率に注意が必要です"
+  },
+  "chart": {
+    "timeEvolution": "時系列推移",
+    "regionalBreakdown": "地域別内訳",
+    "trendAnalysis": "トレンド分析",
+    "comparison": "比較",
+    "distribution": "分布",
+    "noData": "チャートのデータがありません",
+    "legend": "凡例",
+    "xAxis": "時間",
+    "yAxis": "値",
+    "yAxisRates": "率 (%)",
+    "dataPoint": "データポイント"
+  },
+  "settings": {
+    "title": "設定",
+    "theme": "テーマ",
+    "language": "言語",
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム",
+    "preferences": "環境設定",
+    "notifications": "通知",
+    "autoRefresh": "自動更新",
+    "refreshInterval": "更新間隔",
+    "seconds": "秒"
+  },
+  "actions": {
+    "refresh": "更新",
+    "export": "エクスポート",
+    "download": "ダウンロード",
+    "filter": "フィルター",
+    "reset": "リセット",
+    "apply": "適用",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "close": "閉じる",
+    "viewMore": "もっと見る",
+    "viewLess": "折りたたむ",
+    "expand": "展開",
+    "collapse": "折りたたみ",
+    "retry": "再試行"
+  },
+  "filters": {
+    "dateRange": "期間",
+    "today": "今日",
+    "yesterday": "昨日",
+    "last7Days": "過去7日間",
+    "last30Days": "過去30日間",
+    "thisMonth": "今月",
+    "lastMonth": "先月",
+    "custom": "カスタム",
+    "from": "開始",
+    "to": "終了"
+  },
+  "errors": {
+    "generic": "エラーが発生しました",
+    "fetchFailed": "データの取得に失敗しました",
+    "connectionLost": "接続が失われました",
+    "serverError": "サーバーエラー",
+    "clientError": "クライアントエラー",
+    "timeout": "タイムアウトしました",
+    "unauthorized": "認証されていません",
+    "notFound": "リソースが見つかりません",
+    "retry": "もう一度お試しください"
+  },
+  "formats": {
+    "number": "{{value}}",
+    "currency": "¥{{value}}",
+    "percentage": "{{value}}%",
+    "date": "{{date}}",
+    "time": "{{time}}",
+    "dateTime": "{{date}} {{time}}"
+  },
+  "tooltips": {
+    "refreshData": "クリックしてデータを更新",
+    "exportData": "CSVにエクスポート",
+    "toggleTheme": "ライトテーマとダークテーマを切り替え",
+    "changeLanguage": "表示言語を変更",
+    "viewDetails": "クリックして詳細を表示",
+    "closeAlert": "このアラートを閉じる"
+  },
+  "accessibility": {
+    "skipToContent": "コンテンツへスキップ",
+    "mainNavigation": "メインナビゲーション",
+    "loading": "読み込み中",
+    "chart": "データ可視化チャート",
+    "table": "データテーブル",
+    "alert": "アラートメッセージ",
+    "modal": "モーダルダイアログ",
+    "close": "閉じる",
+    "menu": "メニュー"
+  },
+  "summary": {
+    "title": "サマリー統計",
+    "averageActiveUsers": "平均アクティブユーザー",
+    "totalRevenue": "総収益",
+    "avgConversionRate": "平均コンバージョン率",
+    "avgChurnRate": "平均解約率",
+    "topRegion": "トップ地域"
+  }
+}

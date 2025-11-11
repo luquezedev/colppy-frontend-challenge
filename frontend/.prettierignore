@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+coverage/
+.vite/
+
+# Config files that shouldn't be formatted
+.env*
+*.min.js
+*.min.css
+
+# Generated files
+*.generated.*
+*.d.ts
+
+# Test files
+*.snap
+
+# Public assets
+public/
+
+# Markdown
+*.md

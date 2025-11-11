@@ -1,0 +1,253 @@
+/* Inter font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: 255 255 255;
+    --color-foreground: 15 23 42;
+  }
+
+  .dark {
+    --color-background: 15 23 42;
+    --color-foreground: 248 250 252;
+  }
+
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-surface text-gray-900 dark:bg-dark-bg-primary dark:text-dark-text-primary;
+    @apply transition-colors duration-200;
+  }
+
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-dark-bg-tertiary rounded-lg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 dark:bg-gray-600 rounded-lg hover:bg-gray-500 dark:hover:bg-gray-500;
+  }
+
+  /* Selection styles */
+  ::selection {
+    @apply bg-primary-200 text-primary-900 dark:bg-primary-800 dark:text-primary-100;
+  }
+}
+
+@layer components {
+  /* Button base styles */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+    @apply focus:ring-primary-500 dark:focus:ring-offset-dark-bg-primary;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 hover:bg-gray-300;
+    @apply dark:bg-dark-bg-tertiary dark:text-dark-text-primary dark:hover:bg-dark-bg-elevated;
+    @apply focus:ring-gray-500 dark:focus:ring-offset-dark-bg-primary;
+  }
+
+  .btn-danger {
+    @apply bg-metric-danger text-white hover:bg-metric-danger-dark;
+    @apply focus:ring-metric-danger dark:focus:ring-offset-dark-bg-primary;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white dark:bg-dark-bg-secondary rounded-xl;
+    @apply border border-gray-200 dark:border-gray-700;
+    @apply shadow-metric dark:shadow-dark-md;
+    @apply transition-all duration-200;
+  }
+
+  .card-body {
+    @apply p-4 sm:p-6;
+  }
+
+  /* Metric card styles */
+  .metric-card {
+    @apply card;
+  }
+
+  .metric-value {
+    @apply text-3xl sm:text-4xl font-bold;
+    @apply text-gray-900 dark:text-dark-text-primary;
+  }
+
+  .metric-label {
+    @apply text-sm font-medium text-gray-600 dark:text-dark-text-tertiary;
+  }
+
+  .metric-trend {
+    @apply flex items-center gap-1 text-sm font-medium;
+  }
+
+  .metric-trend-up {
+    @apply text-metric-success;
+  }
+
+  .metric-trend-down {
+    @apply text-metric-danger;
+  }
+
+  /* Alert styles */
+  .alert {
+    @apply px-4 py-3 rounded-lg border;
+    @apply animate-slide-up;
+  }
+
+  .alert-warning {
+    @apply bg-metric-warning-light/10 border-metric-warning text-metric-warning-dark;
+    @apply dark:bg-metric-warning/10 dark:border-metric-warning dark:text-metric-warning-light;
+  }
+
+  .alert-danger {
+    @apply bg-metric-danger-light/10 border-metric-danger text-metric-danger-dark;
+    @apply dark:bg-metric-danger/10 dark:border-metric-danger dark:text-metric-danger-light;
+  }
+
+  .alert-success {
+    @apply bg-metric-success-light/10 border-metric-success text-metric-success-dark;
+    @apply dark:bg-metric-success/10 dark:border-metric-success dark:text-metric-success-light;
+  }
+
+  .alert-info {
+    @apply bg-metric-info-light/10 border-metric-info text-metric-info-dark;
+    @apply dark:bg-metric-info/10 dark:border-metric-info dark:text-metric-info-light;
+  }
+
+  /* Loading states */
+  .skeleton {
+    @apply animate-pulse bg-gray-200 dark:bg-dark-bg-tertiary rounded;
+  }
+
+  .spinner {
+    @apply animate-spin h-5 w-5 text-primary-600;
+  }
+
+  /* Input styles */
+  .input {
+    @apply w-full px-3 py-2 rounded-lg;
+    @apply bg-white dark:bg-dark-bg-tertiary;
+    @apply border border-gray-300 dark:border-gray-600;
+    @apply text-gray-900 dark:text-dark-text-primary;
+    @apply placeholder-gray-400 dark:placeholder-dark-text-muted;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+    @apply transition-all duration-200;
+  }
+
+  .select {
+    @apply input;
+    @apply cursor-pointer;
+  }
+
+  /* Grid responsive utilities */
+  .dashboard-grid {
+    @apply grid gap-4 sm:gap-6;
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+
+  .chart-grid {
+    @apply grid gap-6;
+    @apply grid-cols-1 lg:grid-cols-2;
+  }
+}
+
+@layer utilities {
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400;
+    @apply bg-clip-text text-transparent;
+  }
+
+  /* Glassmorphism effect */
+  .glass {
+    @apply bg-white/80 dark:bg-dark-bg-secondary/80;
+    @apply backdrop-blur-md backdrop-saturate-150;
+  }
+
+  /* Custom focus styles */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    @apply dark:focus:ring-offset-dark-bg-primary;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Metric badge styles */
+  .badge {
+    @apply inline-flex items-center px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply bg-metric-success-light/20 text-metric-success-dark;
+    @apply dark:bg-metric-success/20 dark:text-metric-success-light;
+  }
+
+  .badge-warning {
+    @apply bg-metric-warning-light/20 text-metric-warning-dark;
+    @apply dark:bg-metric-warning/20 dark:text-metric-warning-light;
+  }
+
+  .badge-danger {
+    @apply bg-metric-danger-light/20 text-metric-danger-dark;
+    @apply dark:bg-metric-danger/20 dark:text-metric-danger-light;
+  }
+}
+
+/* Chart container responsive styles */
+.chart-container {
+  @apply w-full h-64 sm:h-80 lg:h-96;
+}
+
+/* Highcharts specific dark mode overrides */
+.dark .highcharts-background {
+  fill: #1e293b;
+}
+
+.dark .highcharts-title,
+.dark .highcharts-axis-title {
+  fill: #f8fafc !important;
+}
+
+.dark .highcharts-axis-labels text,
+.dark .highcharts-legend-item text {
+  fill: #94a3b8 !important;
+}
+
+.dark .highcharts-grid-line {
+  stroke: #334155;
+}
+
+.dark .highcharts-tooltip-box {
+  fill: #334155;
+  stroke: #475569;
+}
+
+.dark .highcharts-tooltip text {
+  fill: #f8fafc !important;
+}

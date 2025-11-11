@@ -1,0 +1,154 @@
+{
+  "dashboard": {
+    "title": "Painel de Métricas",
+    "subtitle": "Monitoramento de Desempenho em Tempo Real",
+    "lastUpdated": "Última atualização: {{time}}",
+    "autoRefresh": "Atualização automática: {{status}}",
+    "refreshing": "Atualizando...",
+    "loading": "Carregando painel...",
+    "error": "Erro ao carregar o painel",
+    "noData": "Nenhum dado disponível"
+  },
+  "metrics": {
+    "activeUsers": "Usuários Ativos",
+    "revenue": "Receita",
+    "churnRate": "Taxa de Cancelamento",
+    "conversionRate": "Taxa de Conversão",
+    "retention": "Retenção",
+    "growth": "Crescimento",
+    "engagement": "Engajamento",
+    "performance": "Desempenho"
+  },
+  "regions": {
+    "title": "Divisão Regional",
+    "north": "Norte",
+    "south": "Sul",
+    "east": "Leste",
+    "west": "Oeste",
+    "americas": "Américas",
+    "europe": "Europa",
+    "asia": "Ásia",
+    "africa": "África",
+    "oceania": "Oceania"
+  },
+  "trends": {
+    "up": "Subiu {{value}}%",
+    "down": "Caiu {{value}}%",
+    "stable": "Estável",
+    "rising": "Crescente",
+    "falling": "Decrescente",
+    "vsLastPeriod": "vs período anterior"
+  },
+  "alerts": {
+    "title": "Alertas",
+    "thresholdExceeded": "Limite excedido: {{metric}}",
+    "criticalLevel": "Nível crítico atingido",
+    "warning": "Aviso",
+    "info": "Informação",
+    "success": "Sucesso",
+    "churnHigh": "Taxa de cancelamento está acima do limite aceitável",
+    "revenueDown": "A receita diminuiu significativamente",
+    "usersIncreasing": "Usuários ativos estão aumentando",
+    "conversionLow": "Taxa de conversão precisa de atenção"
+  },
+  "chart": {
+    "timeEvolution": "Evolução Temporal",
+    "regionalBreakdown": "Divisão Regional",
+    "trendAnalysis": "Análise de Tendências",
+    "comparison": "Comparação",
+    "distribution": "Distribuição",
+    "noData": "Nenhum dado disponível para o gráfico",
+    "legend": "Legenda",
+    "xAxis": "Tempo",
+    "yAxis": "Valor",
+    "yAxisRates": "Taxas (%)",
+    "dataPoint": "Ponto de Dados"
+  },
+  "settings": {
+    "title": "Configurações",
+    "theme": "Tema",
+    "language": "Idioma",
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema",
+    "preferences": "Preferências",
+    "notifications": "Notificações",
+    "autoRefresh": "Atualização Automática",
+    "refreshInterval": "Intervalo de Atualização",
+    "seconds": "segundos"
+  },
+  "actions": {
+    "refresh": "Atualizar",
+    "export": "Exportar",
+    "download": "Baixar",
+    "filter": "Filtrar",
+    "reset": "Redefinir",
+    "apply": "Aplicar",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "close": "Fechar",
+    "viewMore": "Ver Mais",
+    "viewLess": "Ver Menos",
+    "expand": "Expandir",
+    "collapse": "Recolher",
+    "retry": "Tentar Novamente"
+  },
+  "filters": {
+    "dateRange": "Período",
+    "today": "Hoje",
+    "yesterday": "Ontem",
+    "last7Days": "Últimos 7 dias",
+    "last30Days": "Últimos 30 dias",
+    "thisMonth": "Este mês",
+    "lastMonth": "Mês passado",
+    "custom": "Personalizado",
+    "from": "De",
+    "to": "Até"
+  },
+  "errors": {
+    "generic": "Algo deu errado",
+    "fetchFailed": "Falha ao buscar dados",
+    "connectionLost": "Conexão perdida",
+    "serverError": "Erro do servidor",
+    "clientError": "Erro do cliente",
+    "timeout": "Tempo limite excedido",
+    "unauthorized": "Acesso não autorizado",
+    "notFound": "Recurso não encontrado",
+    "retry": "Por favor, tente novamente"
+  },
+  "formats": {
+    "number": "{{value}}",
+    "currency": "R$ {{value}}",
+    "percentage": "{{value}}%",
+    "date": "{{date}}",
+    "time": "{{time}}",
+    "dateTime": "{{date}} {{time}}"
+  },
+  "tooltips": {
+    "refreshData": "Clique para atualizar os dados",
+    "exportData": "Exportar dados para CSV",
+    "toggleTheme": "Alternar entre tema claro e escuro",
+    "changeLanguage": "Mudar idioma de exibição",
+    "viewDetails": "Clique para ver detalhes",
+    "closeAlert": "Fechar este alerta"
+  },
+  "accessibility": {
+    "skipToContent": "Pular para o conteúdo",
+    "mainNavigation": "Navegação principal",
+    "loading": "Carregando",
+    "chart": "Gráfico de visualização de dados",
+    "table": "Tabela de dados",
+    "alert": "Mensagem de alerta",
+    "modal": "Diálogo modal",
+    "close": "Fechar",
+    "menu": "Menu"
+  },
+  "summary": {
+    "title": "Estatísticas Resumidas",
+    "averageActiveUsers": "Média de Usuários Ativos",
+    "totalRevenue": "Receita Total",
+    "avgConversionRate": "Taxa de Conversão Média",
+    "avgChurnRate": "Taxa de Cancelamento Média",
+    "topRegion": "Região Principal"
+  }
+}
