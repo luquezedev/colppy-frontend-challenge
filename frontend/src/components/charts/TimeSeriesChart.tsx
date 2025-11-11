@@ -41,6 +41,9 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
       const churnRateName = t('metrics.churnRate');
       const conversionRateName = t('metrics.conversionRate');
 
+      // Calculate if rates axis should be visible
+      const shouldShowRatesAxis = seriesVisibility.churnRate || seriesVisibility.conversionRate;
+
       // Optimize: Single iteration to detect duplicates and prepare series data
       // Instead of 5 separate .map() calls, we do everything in one pass
       const timestamps: number[] = [];
@@ -173,7 +176,7 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
             },
             opposite: false,
             gridLineColor: 'transparent', // Hide grid lines to avoid clutter
-            visible: false, // Hidden by default
+            visible: shouldShowRatesAxis, // Show/hide based on series visibility state
           },
         ],
         tooltip: {
@@ -284,26 +287,9 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
             events: {
               show: function () {
                 setSeriesVisibility((prev) => ({ ...prev, churnRate: true }));
-                // Show rates axis when this series is shown
-                const chart = this.chart;
-                const axis = chart.yAxis[2];
-                if (axis) {
-                  axis.update({ visible: true }, false);
-                  chart.redraw();
-                }
               },
               hide: function () {
                 setSeriesVisibility((prev) => ({ ...prev, churnRate: false }));
-                // Hide rates axis only if both rate series are hidden
-                const chart = this.chart;
-                const conversionSeries = chart.series.find((s) => s.name === conversionRateName);
-                if (conversionSeries && !conversionSeries.visible) {
-                  const axis = chart.yAxis[2];
-                  if (axis) {
-                    axis.update({ visible: false }, false);
-                    chart.redraw();
-                  }
-                }
               },
             },
           },
@@ -317,26 +303,9 @@ export const TimeSeriesChart = memo<TimeSeriesChartProps>(
             events: {
               show: function () {
                 setSeriesVisibility((prev) => ({ ...prev, conversionRate: true }));
-                // Show rates axis when this series is shown
-                const chart = this.chart;
-                const axis = chart.yAxis[2];
-                if (axis) {
-                  axis.update({ visible: true }, false);
-                  chart.redraw();
-                }
               },
               hide: function () {
                 setSeriesVisibility((prev) => ({ ...prev, conversionRate: false }));
-                // Hide rates axis only if both rate series are hidden
-                const chart = this.chart;
-                const churnSeries = chart.series.find((s) => s.name === churnRateName);
-                if (churnSeries && !churnSeries.visible) {
-                  const axis = chart.yAxis[2];
-                  if (axis) {
-                    axis.update({ visible: false }, false);
-                    chart.redraw();
-                  }
-                }
               },
             },
           },
