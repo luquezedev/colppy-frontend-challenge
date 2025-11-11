@@ -21,6 +21,10 @@
   },
   "regions": {
     "title": "Regionale Aufschlüsselung",
+    "us": "Vereinigte Staaten",
+    "apac": "Asien-Pazifik",
+    "eu": "Europa",
+    "latam": "Lateinamerika",
     "north": "Norden",
     "south": "Süden",
     "east": "Osten",

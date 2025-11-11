@@ -21,6 +21,10 @@
   },
   "regions": {
     "title": "Divisão Regional",
+    "us": "Estados Unidos",
+    "apac": "Ásia-Pacífico",
+    "eu": "Europa",
+    "latam": "América Latina",
     "north": "Norte",
     "south": "Sul",
     "east": "Leste",

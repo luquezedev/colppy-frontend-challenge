@@ -21,6 +21,10 @@
   },
   "regions": {
     "title": "Répartition Régionale",
+    "us": "États-Unis",
+    "apac": "Asie-Pacifique",
+    "eu": "Europe",
+    "latam": "Amérique Latine",
     "north": "Nord",
     "south": "Sud",
     "east": "Est",

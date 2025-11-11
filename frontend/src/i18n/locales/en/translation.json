@@ -21,6 +21,10 @@
   },
   "regions": {
     "title": "Regional Breakdown",
+    "us": "United States",
+    "apac": "Asia-Pacific",
+    "eu": "Europe",
+    "latam": "Latin America",
     "north": "North",
     "south": "South",
     "east": "East",
@@ -89,7 +93,6 @@
     "save": "Save",
     "close": "Close",
     "clear": "Clear",
-    "clearHistory": "Clear History",
     "viewMore": "View More",
     "viewLess": "View Less",
     "expand": "Expand",

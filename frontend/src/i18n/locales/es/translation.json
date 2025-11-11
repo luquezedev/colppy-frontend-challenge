@@ -21,6 +21,10 @@
   },
   "regions": {
     "title": "Desglose Regional",
+    "us": "Estados Unidos",
+    "apac": "Asia-Pacífico",
+    "eu": "Europa",
+    "latam": "Latinoamérica",
     "north": "Norte",
     "south": "Sur",
     "east": "Este",
@@ -89,7 +93,6 @@
     "save": "Guardar",
     "close": "Cerrar",
     "clear": "Limpiar",
-    "clearHistory": "Limpiar Histórico",
     "viewMore": "Ver Más",
     "viewLess": "Ver Menos",
     "expand": "Expandir",
